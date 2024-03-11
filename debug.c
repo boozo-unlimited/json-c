@@ -16,15 +16,15 @@
 #include <stdlib.h>
 #include <string.h>
 
-#if HAVE_SYSLOG_H
+#if defined(HAVE_SYSLOG_H)
 #include <syslog.h>
 #endif /* HAVE_SYSLOG_H */
 
-#if HAVE_UNISTD_H
+#if defined(HAVE_UNISTD_H)
 #include <unistd.h>
 #endif /* HAVE_UNISTD_H */
 
-#if HAVE_SYS_PARAM_H
+#if defined(HAVE_SYS_PARAM_H)
 #include <sys/param.h>
 #endif /* HAVE_SYS_PARAM_H */
 

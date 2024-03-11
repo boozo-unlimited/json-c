@@ -11,6 +11,8 @@
  * the string, so use wrappers that ensure that.
  */
 
+#include "config.h"
+
 #include <stdarg.h>
 
 #if !defined(HAVE_SNPRINTF) && (defined(_MSC_VER) || defined(__MINGW32__))

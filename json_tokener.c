@@ -46,10 +46,10 @@
 
 #define jt_hexdigit(x) (((x) <= '9') ? (x) - '0' : ((x)&7) + 9)
 
-#if !HAVE_STRNCASECMP && defined(_MSC_VER)
+#if !defined(HAVE_STRNCASECMP) && defined(_MSC_VER)
 /* MSC has the version as _strnicmp */
 #define strncasecmp _strnicmp
-#elif !HAVE_STRNCASECMP
+#elif !defined(HAVE_STRNCASECMP)
 #error You do not have strncasecmp on your system.
 #endif /* HAVE_STRNCASECMP */
 
